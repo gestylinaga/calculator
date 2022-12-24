@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+
+body {
+  background: #24283b;
+  color: #c0caf5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results {
+  width: 75vw;
+  height: 3rem;
+  border: 5px double #1a1b26;
+  text-align: end;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Button Colors */
+button {
+  background: #1a1b26;
+  border: 2px solid #c0caf5;
+}
+
+.number {
+  color: #7aa2f7;
+}
+
+.operator {
+  color: #f7768e;
+}
+
+.container {
+  display: grid;
+  width: 75vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "seven eight nine add" "four five six subtract" "one two three multiply" "clear zero equals divide";
+}
+
+/* Grid Areas via Template*/
+.clear {
+  color: #ff9e64;
+  grid-area: clear;
+}
+
+.equals {
+  color: #c0caf5;
+  grid-area: equals;
+}
+
+/* Numbers */
+#nine {
+  grid-area: nine;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#six {
+  grid-area: six;
+}
+
+#five {
+  grid-area: five;
+}
+
+#four {
+  grid-area: four;
+}
+
+#three {
+  grid-area: three;
+}
+
+#two {
+  grid-area: two;
+}
+
+#one {
+  grid-area: one;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+/* Operators */
+#add {
+  grid-area: add;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+/*# sourceMappingURL=style.css.map */
